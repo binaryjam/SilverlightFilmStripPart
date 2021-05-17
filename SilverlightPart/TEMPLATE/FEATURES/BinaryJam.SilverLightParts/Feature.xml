@@ -1,0 +1,11 @@
+﻿<Feature xmlns="http://schemas.microsoft.com/sharepoint/"
+         Id="3762311E-D449-4240-B1DD-75273E494FFA"
+         Scope="Site"
+         Hidden="FALSE"
+         Title=      "$Resources:bjamsvlwbprt,FeatureTitle;"
+         Description="$Resources:bjamsvlwbprt,FeatureDesc;"
+         >
+  <ElementManifests>
+    <ElementManifest Location="Elements.xml" />
+  </ElementManifests>
+</Feature>

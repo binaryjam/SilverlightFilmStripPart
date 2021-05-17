@@ -1,0 +1,27 @@
+﻿;
+.OPTION EXPLICIT     ; Generate errors 
+.Set CabinetNameTemplate=BinaryJam.SilverLightParts.wsp     
+.set DiskDirectoryTemplate=CDROM ; All cabinets go in a single directory
+.Set CompressionType=MSZIP;** All files are compressed in cabinet files
+.Set UniqueFiles="ON"
+.Set Cabinet=on
+.Set DiskDirectory1=WSP
+
+Solution\manifest.xml manifest.xml
+TEMPLATE\FEATURES\BinaryJam.SilverLightParts\feature.xml BinaryJam.SilverLightParts\feature.xml
+TEMPLATE\FEATURES\BinaryJam.SilverLightParts\elements.xml BinaryJam.SilverLightParts\elements.xml
+
+TEMPLATE\FEATURES\BinaryJam.SilverLightParts\DWP\FilmStripPart.webpart FEATURES\BinaryJam.SilverLightParts\DWP\FilmStripPart.webpart
+
+TEMPLATE\FEATURES\BinaryJam.SilverLightParts\Files\CreateSilverlight.js FEATURES\BinaryJam.SilverLightParts\Files\CreateSilverlight.js
+TEMPLATE\FEATURES\BinaryJam.SilverLightParts\Files\Main.js FEATURES\BinaryJam.SilverLightParts\Files\Main.js
+TEMPLATE\FEATURES\BinaryJam.SilverLightParts\Files\PhotoItem.xaml FEATURES\BinaryJam.SilverLightParts\Files\PhotoItem.xaml
+TEMPLATE\FEATURES\BinaryJam.SilverLightParts\Files\Scene.xaml FEATURES\BinaryJam.SilverLightParts\Files\Scene.xaml
+TEMPLATE\FEATURES\BinaryJam.SilverLightParts\Files\Silverlight.js FEATURES\BinaryJam.SilverLightParts\Files\Silverlight.js
+
+Resources\bjamsvlwbprt.resx Resources\bjamsvlwbprt.resx
+ 
+bin\Debug\BinaryJam.SilverLightParts.dll BinaryJam.SilverLightParts.dll
+
+;*** <the end>
+

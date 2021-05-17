@@ -1,0 +1,154 @@
+<Canvas xmlns="http://schemas.microsoft.com/client/2007" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+	Width="512" Height="384" x:Name="root">
+	<Canvas.Resources>
+		<Storyboard x:Name="timer"/>
+		<Storyboard x:Name="PhotoZoom">
+			<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="MainImage" Storyboard.TargetProperty="(FrameworkElement.Width)">
+				<SplineDoubleKeyFrame KeyTime="00:00:00" Value="0"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:00.6000000" Value="320"/>
+			</DoubleAnimationUsingKeyFrames>
+			<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="MainImage" Storyboard.TargetProperty="(FrameworkElement.Height)">
+				<SplineDoubleKeyFrame KeyTime="00:00:00" Value="0"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:00.6000000" Value="204"/>
+			</DoubleAnimationUsingKeyFrames>
+			<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="MainImage" Storyboard.TargetProperty="(Canvas.Left)">
+				<SplineDoubleKeyFrame KeyTime="00:00:00" Value="197.667"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:00.6000000" Value="33.667"/>
+			</DoubleAnimationUsingKeyFrames>
+			<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="MainImage" Storyboard.TargetProperty="(Canvas.Top)">
+				<SplineDoubleKeyFrame KeyTime="00:00:00" Value="122.333"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:00.6000000" Value="20.333"/>
+			</DoubleAnimationUsingKeyFrames>
+		</Storyboard>
+		<Storyboard x:Name="ShowSlider">
+			<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="ScrollCanvas" Storyboard.TargetProperty="(Canvas.Top)">
+				<SplineDoubleKeyFrame KeyTime="00:00:00" Value="385"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:00.5000000" Value="324"/>
+			</DoubleAnimationUsingKeyFrames>
+			<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="CanvasMouseOver" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)">
+				<SplineDoubleKeyFrame KeyTime="00:00:00.5000000" Value="32"/>
+			</DoubleAnimationUsingKeyFrames>
+			<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="CanvasMouseOver" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)">
+				<SplineDoubleKeyFrame KeyTime="00:00:00.5000000" Value="-1"/>
+			</DoubleAnimationUsingKeyFrames>
+			<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="MainImage" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleX)">
+				<SplineDoubleKeyFrame KeyTime="00:00:00.5000000" Value="0.8"/>
+			</DoubleAnimationUsingKeyFrames>
+			<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="MainImage" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleY)">
+				<SplineDoubleKeyFrame KeyTime="00:00:00.5000000" Value="0.8"/>
+			</DoubleAnimationUsingKeyFrames>
+			<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="MainImage" Storyboard.TargetProperty="(Canvas.Top)">
+				<SplineDoubleKeyFrame KeyTime="00:00:00.5000000" Value="-20"/>
+			</DoubleAnimationUsingKeyFrames>
+		</Storyboard>
+		<Storyboard x:Name="HideSlider">
+			<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="ScrollCanvas" Storyboard.TargetProperty="(Canvas.Top)">
+				<SplineDoubleKeyFrame KeyTime="00:00:00" Value="324"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:00.5000000" Value="385"/>
+			</DoubleAnimationUsingKeyFrames>
+			<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="CanvasMouseOver" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)">
+				<SplineDoubleKeyFrame KeyTime="00:00:00" Value="42"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:00.5000000" Value="0"/>
+			</DoubleAnimationUsingKeyFrames>
+			<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="CanvasMouseOver" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)">
+				<SplineDoubleKeyFrame KeyTime="00:00:00" Value="0"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:00.5000000" Value="0"/>
+			</DoubleAnimationUsingKeyFrames>
+			<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="MainImage" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleX)">
+				<SplineDoubleKeyFrame KeyTime="00:00:00" Value="0.8"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:00.5000000" Value="1"/>
+			</DoubleAnimationUsingKeyFrames>
+			<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="MainImage" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleY)">
+				<SplineDoubleKeyFrame KeyTime="00:00:00" Value="0.8"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:00.5000000" Value="1"/>
+			</DoubleAnimationUsingKeyFrames>
+			<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="MainImage" Storyboard.TargetProperty="(Canvas.Top)">
+				<SplineDoubleKeyFrame KeyTime="00:00:00" Value="-20"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:00.5000000" Value="8"/>
+			</DoubleAnimationUsingKeyFrames>
+		</Storyboard>
+		<Storyboard x:Name="ScrollIntoView">
+			<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="PictureSelectScroll" Storyboard.TargetProperty="(Canvas.Left)">
+				<SplineDoubleKeyFrame x:Name="XFrom" KeyTime="00:00:00" Value="0"/>
+				<SplineDoubleKeyFrame x:Name="XTo" KeyTime="00:00:00.3000000" Value="-60"/>
+			</DoubleAnimationUsingKeyFrames>
+		</Storyboard>		
+	</Canvas.Resources>
+	<Canvas.Background>
+		<LinearGradientBrush EndPoint="0.496,1.167" StartPoint="0.498,-0.063">
+			<GradientStop Color="#FFD2D2FD" Offset="0"/>
+			<GradientStop Color="#FFC8C9FF" Offset="1"/>
+			<GradientStop Color="#FF7F81FF" Offset="0.516"/>
+		</LinearGradientBrush>
+	</Canvas.Background>
+	<Canvas.RenderTransform>
+		<TransformGroup>
+			<TranslateTransform X="0" Y="0" />
+			<ScaleTransform x:Name="scaleTransform" ScaleX="1" ScaleY="1" />
+		</TransformGroup>
+	</Canvas.RenderTransform>
+	<Canvas Width="3.333" Height="0" Canvas.Left="423.333" Canvas.Top="34" />
+	<Rectangle x:Name="_timer" Opacity="0"/>
+	<Image Width="496" Height="368" Canvas.Left="8" Canvas.Top="8" x:Name="MainImage" RenderTransformOrigin="0.5,0.5" >
+		<Image.RenderTransform>
+			<TransformGroup>
+				<ScaleTransform ScaleX="1" ScaleY="1"/>
+				<SkewTransform AngleX="0" AngleY="0"/>
+				<RotateTransform Angle="0"/>
+				<TranslateTransform X="0" Y="0"/>
+			</TransformGroup>
+		</Image.RenderTransform>
+	</Image>
+	<Canvas Opacity="0.59" RenderTransformOrigin="0.5,0.5" x:Name="CanvasMouseOver" Width="540" Height="26" Canvas.Left="0.167" Canvas.Top="358" Background="#00000000">
+		<Canvas.RenderTransform>
+			<TransformGroup>
+				<ScaleTransform ScaleX="1" ScaleY="1"/>
+				<SkewTransform AngleX="0" AngleY="0"/>
+				<RotateTransform Angle="0"/>
+				<TranslateTransform X="0" Y="0"/>
+			</TransformGroup>
+		</Canvas.RenderTransform>
+	</Canvas>
+	<Canvas Opacity="0.56" x:Name="CanvasMouseOut" Width="511.5" Height="323" Background="#00000000"/>
+	<Canvas Width="34" Height="34" Canvas.Left="478">
+		<Rectangle Opacity="0.48" Fill="#FF1D0606" Width="15" Height="15" Canvas.Left="11" Canvas.Top="11"/>
+		<Rectangle Opacity="0.67" Fill="#FF260D0D" Width="20" Height="20" Canvas.Left="1" Canvas.Top="1"/>
+		<Rectangle x:Name="FullScreen" Width="34" Height="34" Opacity="0" Fill="#FF000000" Canvas.Left="0"/>
+	</Canvas>
+	<Canvas Width="511.833" Height="60" Canvas.Top="385" Canvas.Left="0.167" x:Name="ScrollCanvas">
+		<Rectangle Stroke="#FF2A3698" Width="511.5" Height="60" Canvas.Left="0" Canvas.Top="0"/>
+		<Canvas Width="486.666" Height="60" Canvas.Left="12" Canvas.Top="0"  x:Name="PictureSelect">
+			<Canvas.Clip>
+				<RectangleGeometry Rect="0, 0, 486.666, 60"/>
+			</Canvas.Clip>
+			<Canvas Width="486.666" Height="60" Canvas.Left="0" Canvas.Top="0"  x:Name="PictureSelectScroll"/>
+		</Canvas>
+
+		<Canvas x:Name="ScrollPicturesLeft" Width="13.167" Height="60" Canvas.Left="0.0" Canvas.Top="0.0">
+			<Rectangle Fill="#FF8082FF" Width="13.167" Height="60" Canvas.Top="0" Opacity="0.81" Stroke="#FF1C2A83"/>
+			<Path Fill="#FFFFFFFF" Stretch="Fill" Stroke="#FF000000" Width="8.75" Height="15.5" Canvas.Left="1.417" Canvas.Top="19.167" Data="M9.667,19.667 L9.667,34.167 1.9169998,26.667 z"/>
+			<Rectangle Width="6.375" Height="57.916" Canvas.Left="1.04" Canvas.Top="1.048">
+				<Rectangle.Fill>
+					<LinearGradientBrush EndPoint="1,0.5" StartPoint="0,0.5">
+						<GradientStop Color="#A7FFFFFF" Offset="0"/>
+						<GradientStop Color="#00FFFFFF" Offset="1"/>
+					</LinearGradientBrush>
+				</Rectangle.Fill>
+			</Rectangle>
+		</Canvas>
+		<Canvas Width="13.167" Height="60" x:Name="ScrollPicturesRight" Canvas.Left="498.666" Canvas.Top="0.0">
+			<Rectangle Fill="#FF8082FF" Stroke="#FF2A3698" Width="12.917" Height="60" Canvas.Top="0"/>
+			<Rectangle Width="6.042" Height="58" Canvas.Left="5.917" Canvas.Top="1.007">
+				<Rectangle.Fill>
+					<LinearGradientBrush EndPoint="1,0.5" StartPoint="0,0.5">
+						<GradientStop Color="#00FFFFFF" Offset="0"/>
+						<GradientStop Color="#B8FFFFFF" Offset="1"/>
+					</LinearGradientBrush>
+				</Rectangle.Fill>
+			</Rectangle>
+			<Path Fill="#FFFFFFFF" Stretch="Fill" Stroke="#FF000000" Width="7" Height="13.75" Canvas.Left="2.834" Canvas.Top="20.751" Data="M3.334,21.251 L3.334,34.000999 9.3340001,27.250999 z"/>
+		</Canvas>
+	</Canvas>
+</Canvas>
+
+

@@ -1,0 +1,14 @@
+﻿<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <Module Name="BinaryJamBinaryJam.SilverLightParts" Path="dwp" List="113" Url="_catalogs/wp" RootWebOnly="TRUE">
+    <File Url="FilmStripPart.webpart" Type="GhostableInLibrary">
+      <Property Name="Group" Value="BinaryJam WebParts"/>
+    </File>
+  </Module>
+  <Module RootWebOnly="TRUE">
+    <File Url="Files/CreateSilverlight.js" Type="Ghostable" IgnoreIfAlreadyExists="TRUE" />
+    <File Url="Files/Main.js" Type="Ghostable" IgnoreIfAlreadyExists="TRUE" />
+    <File Url="Files/PhotoItem.xaml" Type="Ghostable" IgnoreIfAlreadyExists="TRUE" />
+    <File Url="Files/Scene.xaml" Type="Ghostable" IgnoreIfAlreadyExists="TRUE" />
+    <File Url="Files/Silverlight.js" Type="Ghostable" IgnoreIfAlreadyExists="TRUE" />
+  </Module>
+</Elements>

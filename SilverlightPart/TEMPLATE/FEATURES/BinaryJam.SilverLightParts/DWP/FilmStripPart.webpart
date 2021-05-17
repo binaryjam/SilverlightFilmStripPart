@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<webParts>
+  <webPart xmlns="http://schemas.microsoft.com/WebPart/v3">
+    <metaData>
+      <type name="BinaryJam.SilverLightParts.FilmStripPart, BinaryJam.SilverLightParts, Version=1.0.0.0, Culture=neutral, PublicKeyToken=82c7f302871324f4" />
+      <importErrorMessage>Error importing Web Part.</importErrorMessage>
+    </metaData>
+    <data>
+      <properties>
+        <property name="Title">Silverlight FilmStrip Part</property>
+        <property name="Description" type="string">Silverlight FilmStrip Part</property>
+      </properties>
+    </data>
+  </webPart>
+</webParts>

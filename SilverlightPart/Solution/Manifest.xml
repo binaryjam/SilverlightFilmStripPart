@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<Solution SolutionId="DAE56AC0-97C7-4973-8704-DC3F6C48F4A4"
+		  xmlns="http://schemas.microsoft.com/sharepoint/">
+
+  <FeatureManifests>
+    <FeatureManifest Location="BinaryJam.SilverLightParts\feature.xml" />
+  </FeatureManifests>
+
+  <TemplateFiles>
+    <TemplateFile Location="FEATURES\BinaryJam.SilverLightParts\DWP\FilmStripPart.webpart"/>
+    <TemplateFile Location="FEATURES\BinaryJam.SilverLightParts\Files\CreateSilverlight.js"/>
+    <TemplateFile Location="FEATURES\BinaryJam.SilverLightParts\Files\Main.js "/>
+    <TemplateFile Location="FEATURES\BinaryJam.SilverLightParts\Files\PhotoItem.xaml"/>
+    <TemplateFile Location="FEATURES\BinaryJam.SilverLightParts\Files\Scene.xaml"/>
+    <TemplateFile Location="FEATURES\BinaryJam.SilverLightParts\Files\Silverlight.js"/>
+
+  </TemplateFiles>
+
+  <Assemblies>
+    <Assembly DeploymentTarget="GlobalAssemblyCache" Location="BinaryJam.SilverLightParts.dll">
+      <SafeControls>
+        <SafeControl Assembly="BinaryJam.SilverLightParts, Version=1.0.0.0, Culture=neutral, PublicKeyToken=82c7f302871324f4"
+                     Namespace="BinaryJam.SilverLightParts" TypeName="*" Safe="True"/>
+      </SafeControls>
+    </Assembly>
+  </Assemblies>
+  
+  <RootFiles>
+    <RootFile Location="Resources\bjamsvlwbprt.resx"/>
+  </RootFiles>
+
+     
+</Solution>
